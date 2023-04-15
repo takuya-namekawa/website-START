@@ -89,6 +89,10 @@ img  {
   text-decoration: none;
 }
 
+.gnav__link:hover{
+  color: var(--main-color);
+}
+
 .gnav__link--active {
   color: #dd1b57;
 }
@@ -165,6 +169,7 @@ section {
   list-style: none;
 }
 
+
 .news-list__item {
   font-size: 15px;
   line-height: 1.8;
@@ -190,11 +195,10 @@ section {
 .news-list__title {
   font-size: 15px;
   line-height: 1.8em;
-  margin-top: 18px;
 }
 
 .news-list__date {
-  margin: 20px;
+  margin-right: 20px;
 }
 
 .service__heading {
@@ -286,15 +290,116 @@ section {
   letter-spacing: 0.03em;
 }
 
+/*下層ページ:meassge*/
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 190px;
+  background-image: url(images/pc_header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.page-header__titleArea {
+  color: #fff;
+  text-align: center;
+}
+
+.page-header__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.message {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.message__title {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.message__subtitle {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.ceo-message__img-wrapper{
+  width: 100px;
+  margin: 0 25px 15px 0;
+  float: left;
+}
+
+.ceo-message__img {
+  border-radius: 50%;
+}
+
+.ceo-message__text {
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.ceo-message__text a {
+  color: var(--link-color);
+}
 
 
+/*下層ページ company*/
 
+.table-type01 {
+  width: 100%;
+  font-size: 15px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+.table-type01 tr {
+  border-bottom: solid 1px #ddd;
+}
 
+.table-type01 th,
+.table-type01 td {
+  text-align: left;
+  padding: 30px;
+}
 
+.table-type01 th {
+  width: 20%;
+}
 
+/*.table-type01 p:not(:last-child) {*/
+/*  margin-bottom: 10px;*/
+/*}*/
 
+/*.table-type01 ul {*/
+/*  margin-left: 20px;*/
+/*}*/
 
+.company-info__table {
+  margin-bottom: 50px;
+}
 
+.company-info__map iframe {
+  height: 400px;
+}
 
+.company-info__map-link {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 20px;
+}
 
