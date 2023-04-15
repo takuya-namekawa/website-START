@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --link-color: #349bf4;
+  --main-color: #dd1b57;
+  --text-color: #333;
+}
+
+
+
+body {
+  font-size: 16px;
+  color: #333;
+   font-family: "Roboto", "Noto Sans JP", Arial, "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans", Meiryo, sans-serif;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding: 30px 70px;
+}
+
+.header__logo {
+  line-height: 1;
+}
+
+a {
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+nav {
+  display: block;
+}
+
+img  {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.content {
+  display: grid;
+  padding: 60px 0 100px;
+  row-gap: 80px;
+}
+
+
+.gnav ul {
+  list-style: none;
+}
+
+.gnav__list {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+
+.gnav__item {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.gnav__link {
+  color: #333;
+  text-decoration: none;
+}
+
+.gnav__link--active {
+  color: #dd1b57;
+}
+
+.btn-menu {
+  display: none;
+}
+
+.mv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  background-image: url(images/pc_mv.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.mv__titleArea {
+  color: #fff;
+  text-align: center;
+}
+.mv__title {
+  font-size: 160px;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 4px 6px rgb(0 0 0 / 25%);
+  margin-bottom:  10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+}
+
+.content {
+  display: grid;
+  padding: 60px 0 100px;
+  row-gap: 80px;
+}
+
+section {
+  display: block;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.news__inner {
+  display: flex;
+  column-gap: 90px;
+}
+
+.heading-primary {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #dd1b57;
+}
+.news__body {
+  flex: 1;
+}
+
+
+.news__list ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.news-list__item {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.news-list__item:last-child {
+  margin-bottom: 0;
+}
+
+.news-list__link {
+  display: flex;
+  color: #333;
+  text-decoration: none;
+}
+
+.news-list__link:hover {
+  color: #dd1b57;
+}
+
+.news-list__title {
+  font-size: 15px;
+  line-height: 1.8em;
+  margin-top: 18px;
+}
+
+.news-list__date {
+  margin: 20px;
+}
+
+.service__heading {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.service__heading::before {
+  display: block;
+  content: "SERVICE";
+  position: absolute;
+  top: -40px;
+  right: -20px;
+  z-index: -1;
+  font-size: 168px;
+  font-weight: bold;
+  line-height: 1;
+  color: #f2f2f2;
+}
+
+.service-list {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.service-list__item {
+  padding: 50px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 3px 21px rgba(0, 0, 0, 0.16);
+}
+
+.service-item__img-wrapper {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.service-list__img {
+  font-size: 48px;
+  color: var(--main-color);
+  vertical-align: bottom;
+}
+
+.service-list__title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.service-list__text {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 15px;
+}
+
+.footer {
+  color: #fff;
+  padding: 60px 20px 50px;
+  background-color: var(--main-color);
+}
+
+.footer-nav {
+  margin-bottom: 20px;
+}
+
+.footer-nav__list {
+  display: flex;
+  column-gap: 30px;
+  list-style: none;
+}
+
+.footer-nav__item {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0.05em;
+}
+
+.footer-nav__link {
+  color: #fff;
+  text-decoration: none;
+
+}
+
+
+.footer__copyright {
+  font-size: 12px;
+  letter-spacing: 0.03em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
